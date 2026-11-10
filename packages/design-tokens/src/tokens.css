@@ -1,0 +1,112 @@
+/* packages/design-tokens/src/tokens.css */
+:root {
+  /* ---------- Brand (raw) ---------- */
+  --brand-navy: #0D2B5A;
+  --brand-blue: #2563EB;
+  --brand-blue-700: #1D4ED8;
+  --brand-blue-500: #3B82F6;
+  --brand-blue-300: #93C5FD;
+  --brand-blue-200: #BFDBFE;
+  --brand-blue-100: #DBEAFE;
+  --brand-blue-50:  #EFF6FF;
+  --brand-gradient: linear-gradient(135deg, #1D4ED8 0%, #3B82F6 100%);
+
+  --accent-amber: #FFC107;
+  --accent-yellow-400: #FACC15;
+  --accent-yellow-300: #FDE047;
+
+  --bg-white: #FFFFFF;
+  --bg-cream: #FEF8EB;
+  --bg-cool:  #F1F5F9;
+  --bg-gray:  #F9FAFB;
+
+  --text-heading:   #111827;
+  --text-heading-2: #171717;
+  --text-body:      #374151;
+  --text-body-2:    #4B5563;
+  --text-muted:     #6B7280;
+
+  --alert-red: #EF4444;
+  --alert-red-strong: #D92D20;
+  --alert-red-dark: #A91D0F;
+  --alert-gradient: linear-gradient(90deg, #A91D0F 0%, #D92D20 50%, #A91D0F 100%);
+
+  /* ---------- Functional status ---------- */
+  --status-success: #16A34A;
+  --status-success-bg: #DCFCE7;
+  --status-review: #7C3AED;
+  --status-review-bg: #EDE9FE;
+  --status-warning: #B45309;
+  --status-warning-bg: #FEF3C7;
+  --status-neutral: #F3F4F6;
+  --status-neutral-border: #D1D5DB;
+
+  /* ---------- Semantic (shadcn/ui variable names) ---------- */
+  --background: var(--bg-white);
+  --foreground: var(--text-body);
+  --card: var(--bg-white);
+  --card-foreground: var(--text-body);
+  --popover: var(--bg-white);
+  --popover-foreground: var(--text-body);
+  --primary: var(--brand-blue);
+  --primary-foreground: #FFFFFF;
+  --secondary: var(--brand-blue-50);
+  --secondary-foreground: var(--brand-blue-700);
+  --muted: var(--bg-cool);
+  --muted-foreground: var(--text-muted);
+  --accent: var(--accent-amber);
+  --accent-foreground: var(--brand-navy);
+  --destructive: var(--alert-red-strong);
+  --destructive-foreground: #FFFFFF;
+  --border: #E5E7EB;
+  --input: #D1D5DB;
+  --ring: var(--brand-blue);
+  --heading: var(--text-heading);
+  --brand: var(--brand-navy);
+
+  /* Charts (shadcn chart vars) */
+  --chart-1: var(--brand-blue);
+  --chart-2: var(--brand-navy);
+  --chart-3: var(--accent-amber);
+  --chart-4: var(--brand-blue-300);
+  --chart-5: var(--status-success);
+
+  /* Sidebar (shadcn sidebar vars) */
+  --sidebar: var(--brand-navy);
+  --sidebar-foreground: #E5EDFF;
+  --sidebar-primary: var(--accent-amber);
+  --sidebar-primary-foreground: var(--brand-navy);
+  --sidebar-accent: #16396F;
+  --sidebar-accent-foreground: #FFFFFF;
+  --sidebar-border: #1B3A6B;
+  --sidebar-ring: var(--brand-blue-300);
+
+  /* ---------- Shape & depth ---------- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius: var(--radius-md);
+  --shadow-sm: 0 1px 2px rgba(13, 43, 90, 0.06), 0 1px 3px rgba(13, 43, 90, 0.08);
+  --shadow-md: 0 4px 12px rgba(13, 43, 90, 0.10);
+  --shadow-lg: 0 12px 32px rgba(13, 43, 90, 0.16);
+
+  /* ---------- Typography ---------- */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Plus Jakarta Sans", var(--font-sans);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* ---------- Exam palette ---------- */
+  --palette-not-visited-bg: var(--status-neutral);
+  --palette-not-visited-fg: var(--text-body);
+  --palette-not-answered-bg: var(--alert-red-strong);
+  --palette-answered-bg: var(--status-success);
+  --palette-review-bg: var(--status-review);
+  --palette-fg-on-color: #FFFFFF;
+  --palette-current-ring: var(--brand-navy);
+}
+
+/* App surface presets: set on <body data-surface="..."> */
+[data-surface="marketing"] { --background: var(--bg-white); }
+[data-surface="student"]   { --background: var(--bg-cool); }
+[data-surface="admin"]     { --background: var(--bg-gray); }
+[data-surface="exam"]      { --background: var(--bg-white); }

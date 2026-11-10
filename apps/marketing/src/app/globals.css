@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@import "@puzzlers/design-tokens/theme.css";
+@source "../../../../packages/ui/src";
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-cool);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-blue-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-blue-500);
+}

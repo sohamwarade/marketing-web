@@ -1,0 +1,16 @@
+{
+  "name": "puzzlers-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@12.18.0",
+  "scripts": {
+    "dev": "pnpm --filter @puzzlers/marketing dev",
+    "dev:marketing": "pnpm --filter @puzzlers/marketing dev",
+    "build": "pnpm --filter @puzzlers/marketing build",
+    "lint": "pnpm --filter @puzzlers/marketing lint",
+    "typecheck": "pnpm --recursive typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

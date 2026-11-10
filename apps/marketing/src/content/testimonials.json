@@ -1,0 +1,22 @@
+[
+  {
+    "id": "t1",
+    "name": "Aditya S.",
+    "examination": "MHT-CET",
+    "year": "2026",
+    "quote": "The CBT interface on Puzzlers is identical to the actual exam screen. Practicing full mocks with section timers eliminated all my test anxiety on exam day.",
+    "consentOnFile": true,
+    "approvedBy": "Content Lead",
+    "approvedAt": "2026-10-15T10:00:00Z"
+  },
+  {
+    "id": "t2",
+    "name": "Rohan M.",
+    "examination": "JEE Main",
+    "year": "2026",
+    "quote": "The chapter-wise analytics highlighted exactly which areas were costing me negative marks in Physics. The post-test breakdown is the most practical I have seen.",
+    "consentOnFile": true,
+    "approvedBy": "Content Lead",
+    "approvedAt": "2026-10-20T12:00:00Z"
+  }
+]
