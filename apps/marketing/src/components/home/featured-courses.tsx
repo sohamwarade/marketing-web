@@ -13,10 +13,7 @@ export function FeaturedCourses({ courses }: { courses: PublicCourseCard[] }) {
       <Container>
         <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-10 gap-4">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100/70 px-3 py-1 rounded-full">
-              Syllabus Coverage
-            </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-heading tracking-tight mt-3">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-heading tracking-tight">
               Featured Comprehensive Courses
             </h2>
             <p className="mt-1 text-sm text-body">

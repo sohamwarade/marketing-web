@@ -14,10 +14,7 @@ export default function TermsPage() {
     <Section tone="white" className="py-12">
       <Container className="max-w-3xl space-y-6">
         <div className="border-b border-border pb-4">
-          <span className="text-[10px] font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-2.5 py-0.5 rounded">
-            DRAFT — Subject to Final Legal Review
-          </span>
-          <h1 className="text-3xl font-black text-heading tracking-tight mt-3">
+          <h1 className="text-3xl font-black text-heading tracking-tight">
             Terms and Conditions
           </h1>
           <p className="text-xs text-muted-foreground mt-1">

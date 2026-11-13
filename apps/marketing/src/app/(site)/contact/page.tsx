@@ -1,6 +1,6 @@
 import * as React from "react";
 import type { Metadata } from "next";
-import { Mail, Phone, Clock, MapPin } from "lucide-react";
+import { Mail, Clock } from "lucide-react";
 import { Section, Container } from "@puzzlers/ui";
 import { constructMetadata } from "@/lib/seo";
 import { ContactForm } from "@/islands/contact-form";
@@ -61,30 +61,20 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-3.5">
-                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-green-50 text-green-700">
-                    <Phone className="h-4 w-4" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-bold text-heading block">Admissions Desk</span>
-                    <span className="text-xs text-muted-foreground">+91 91234 56789</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3.5">
                   <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-amber-50 text-amber-800">
                     <Clock className="h-4 w-4" />
                   </div>
                   <div>
-                    <span className="text-xs font-bold text-heading block">Working Hours</span>
+                    <span className="text-xs font-bold text-heading block">Helpdesk Hours</span>
                     <span className="text-xs text-muted-foreground">Monday – Saturday: 9:00 AM – 7:00 PM IST</span>
                   </div>
                 </div>
               </div>
 
               <div className="rounded-2xl border border-border bg-blue-50/60 p-6 shadow-sm text-xs space-y-2">
-                <span className="font-bold text-navy block text-sm">Online Platform Operations</span>
+                <span className="font-bold text-navy block text-sm">Admissions & Technical Guidance</span>
                 <p className="text-body leading-relaxed">
-                  Puzzlers CBT infrastructure is monitored 24/7 on Cloudflare Workers edge nodes. Scheduled mock tests operate without interruption during live exam windows.
+                  Our academic counselors assist students with examination choice, syllabus planning, and batch onboarding. For immediate inquiries, submit the form or email us directly.
                 </p>
               </div>
             </div>

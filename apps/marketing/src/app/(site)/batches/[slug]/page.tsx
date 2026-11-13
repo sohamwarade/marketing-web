@@ -101,11 +101,6 @@ export default async function BatchDetailPage({
                   </span>
                   <span className="font-bold text-heading">{formatDate(batch.startsAt)}</span>
                 </div>
-                {batch.enrollment.seatsLeft !== undefined && (
-                  <div className="rounded-lg bg-amber-50 p-3 text-center text-xs font-bold text-amber-900 border border-amber-200">
-                    Hurry! Only {batch.enrollment.seatsLeft} seats remaining
-                  </div>
-                )}
               </div>
             </div>
           </div>

@@ -7,8 +7,8 @@ import { studentUrl } from "@/lib/links";
 export function CTABand() {
   return (
     <Section tone="navy" className="relative overflow-hidden py-20">
-      <div className="absolute top-0 right-0 -z-0 h-64 w-64 rounded-full bg-blue-600/20 blur-3xl" />
-      <div className="absolute bottom-0 left-0 -z-0 h-64 w-64 rounded-full bg-amber/10 blur-3xl" />
+      <div className="absolute top-0 right-0 -z-0 h-64 w-64 rounded-full bg-blue-600/20 blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-0 -z-0 h-64 w-64 rounded-full bg-amber/10 blur-3xl pointer-events-none" />
 
       <Container className="relative z-10 text-center max-w-3xl">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight font-display">
@@ -27,9 +27,9 @@ export function CTABand() {
           </a>
           <Link href="/contact" className="w-full sm:w-auto">
             <Button
-              variant="outline"
+              variant="outline-light"
               size="lg"
-              className="w-full sm:w-auto font-semibold text-white border-white/30 hover:bg-white/10"
+              className="w-full sm:w-auto font-semibold text-white"
             >
               <MessageSquare className="mr-2 h-4 w-4" />
               Talk to admissions

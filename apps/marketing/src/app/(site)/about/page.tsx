@@ -96,9 +96,9 @@ export default function AboutPage() {
                 2
               </span>
               <div>
-                <h4 className="text-base font-bold text-heading">Server-Side Strict Evaluation Authority</h4>
+                <h4 className="text-base font-bold text-heading">Strict Exam Integrity & Instant Evaluation</h4>
                 <p className="mt-1 text-xs text-muted-foreground leading-relaxed">
-                  Scoring rules, section boundaries, and deadline enforcement are governed strictly by server-side workers. Answer keys are never exposed in browser payloads.
+                  Scoring rules, section boundaries, and deadline enforcement mirror official guidelines, with instant automated score calculation and rank percentile generation upon test submission.
                 </p>
               </div>
             </div>

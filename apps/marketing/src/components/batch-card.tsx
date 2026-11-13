@@ -64,12 +64,6 @@ export function BatchCard({ batch }: { batch: PublicBatchCard }) {
                 : `${batch.validity.days} Days`}
             </span>
           </div>
-
-          {batch.enrollment.seatsLeft !== undefined && (
-            <div className="pt-2 text-[11px] font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-md text-center">
-              Only {batch.enrollment.seatsLeft} seats remaining for this batch
-            </div>
-          )}
         </div>
       </CardContent>
 

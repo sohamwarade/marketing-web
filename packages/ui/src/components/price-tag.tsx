@@ -46,16 +46,9 @@ export function PriceTag({ pricePaise, compareAtPricePaise, className, size = "m
         {formatINR(pricePaise)}
       </span>
       {compareAtPricePaise && compareAtPricePaise > pricePaise && (
-        <>
-          <span className="text-sm text-muted-foreground line-through">
-            {formatINR(compareAtPricePaise)}
-          </span>
-          {discount && (
-            <span className="text-xs font-bold text-green-600 bg-green-50 px-1.5 py-0.5 rounded">
-              {discount}% OFF
-            </span>
-          )}
-        </>
+        <span className="text-xs text-muted-foreground line-through">
+          {formatINR(compareAtPricePaise)}
+        </span>
       )}
     </div>
   );

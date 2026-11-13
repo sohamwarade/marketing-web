@@ -10,11 +10,8 @@ export function ExamCategories({ examinations }: { examinations: PublicExaminati
   return (
     <Section tone="cream">
       <Container>
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100/70 px-3 py-1 rounded-full">
-            Target Focus
-          </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-heading tracking-tight mt-3">
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-heading tracking-tight">
             Choose Your Target Examination
           </h2>
           <p className="mt-2 text-sm text-body">
@@ -22,7 +19,7 @@ export function ExamCategories({ examinations }: { examinations: PublicExaminati
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto gap-8">
           {examinations.map((exam) => (
             <Link
               key={exam.slug}

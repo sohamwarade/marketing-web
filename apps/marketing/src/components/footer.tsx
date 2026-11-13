@@ -13,7 +13,7 @@ export function Footer() {
           <div className="space-y-4 md:col-span-2">
             <Logo variant="full" tone="light" />
             <p className="max-w-sm text-sm text-blue-100/80 leading-relaxed">
-              Official computer-based test preparation platform for MHT-CET, JEE Main, and JEE Advanced.
+              Official computer-based test preparation platform for MHT-CET and JEE Main.
               Complete syllabus courses, verified test simulations, and deep diagnostic analytics.
             </p>
             <div className="text-xs text-blue-200/70 pt-2">
@@ -33,11 +33,6 @@ export function Footer() {
               <li>
                 <Link href="/jee-main" className="hover:text-white transition-colors">
                   JEE Main Preparation
-                </Link>
-              </li>
-              <li>
-                <Link href="/jee-advanced" className="hover:text-white transition-colors">
-                  JEE Advanced Preparation
                 </Link>
               </li>
               <li>

@@ -1,9 +1,9 @@
 import * as React from "react";
 import Link from "next/link";
-import { Award, Calendar, CheckSquare, Clock } from "lucide-react";
+import { Award, Calendar, CheckSquare, Clock, ArrowRight } from "lucide-react";
 import { Card, CardContent, CardFooter, PriceTag, ExamBadge, Button } from "@puzzlers/ui";
 import type { PublicTestSeriesCard } from "@puzzlers/schemas";
-import { formatDate } from "@/lib/format";
+import { studentUrl } from "@/lib/links";
 
 export function TestSeriesCard({ testSeries }: { testSeries: PublicTestSeriesCard }) {
   return (
@@ -46,21 +46,20 @@ export function TestSeriesCard({ testSeries }: { testSeries: PublicTestSeriesCar
           </div>
         </div>
 
-        {testSeries.nextScheduledTestDate && (
-          <div className="flex items-center gap-1.5 text-xs text-blue-700 bg-blue-50 px-2.5 py-1.5 rounded-md font-medium">
-            <Calendar className="h-3.5 w-3.5 text-blue-600" />
-            <span>Next Live Mock: {formatDate(testSeries.nextScheduledTestDate)}</span>
-          </div>
-        )}
+        <div className="flex items-center gap-1.5 text-xs text-primary bg-blue-50 px-2.5 py-1.5 rounded-md font-medium">
+          <Clock className="h-3.5 w-3.5 text-primary" />
+          <span>Self-paced practice and scheduled live mock modes</span>
+        </div>
       </CardContent>
 
       <CardFooter className="p-5 pt-0 flex items-center justify-between border-t border-border mt-auto">
         <PriceTag pricePaise={testSeries.pricePaise} compareAtPricePaise={testSeries.compareAtPricePaise} size="sm" />
-        <Link href={`/batches/${testSeries.slug}`}>
+        <a href={testSeries.isFree ? studentUrl("/register") : studentUrl("/checkout", { item: `test_series:${testSeries.id}` })}>
           <Button variant="default" size="sm" className="font-semibold">
-            View schedule
+            {testSeries.isFree ? "Attempt for free" : "Enroll in series"}
+            <ArrowRight className="ml-1 h-3.5 w-3.5" />
           </Button>
-        </Link>
+        </a>
       </CardFooter>
     </Card>
   );

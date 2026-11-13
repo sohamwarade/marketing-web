@@ -1,7 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { Video, BookOpen, Laptop, BarChart3, Bookmark, Gift, ArrowRight } from "lucide-react";
-import { Section, Container } from "@puzzlers/ui";
+import { Section, Container, Button } from "@puzzlers/ui";
 
 const FEATURES = [
   {
@@ -19,7 +19,7 @@ const FEATURES = [
   {
     icon: Laptop,
     title: "Authentic CBT Mock Tests",
-    desc: "Realistic NTA/State CET test screen with 5-state palette, continuous autosave, and strict timer sync.",
+    desc: "Realistic NTA and State CET test screen with 5-state palette, continuous autosave, and strict timer sync.",
     anchor: "/features#cbt",
   },
   {
@@ -46,11 +46,8 @@ export function PlatformFeatures() {
   return (
     <Section tone="cream">
       <Container>
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100/70 px-3 py-1 rounded-full">
-            Engineering Excellence
-          </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-heading tracking-tight mt-3">
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-heading tracking-tight">
             Engineered Specifically for Exam Day Success
           </h2>
           <p className="mt-2 text-sm text-body">
@@ -65,26 +62,29 @@ export function PlatformFeatures() {
               <Link
                 key={idx}
                 href={feat.anchor}
-                className="group rounded-2xl border border-border bg-white p-6 shadow-sm transition-all hover:shadow-md hover:border-blue-300 flex flex-col justify-between"
+                className="group rounded-2xl border border-border bg-white p-6 shadow-xs transition-all hover:shadow-md hover:border-blue-300 flex flex-col justify-start"
               >
-                <div>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-50 text-primary mb-4 transition-transform group-hover:scale-105">
-                    <Icon className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-base font-bold text-heading group-hover:text-primary transition-colors">
-                    {feat.title}
-                  </h3>
-                  <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
-                    {feat.desc}
-                  </p>
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-primary mb-4 transition-transform group-hover:scale-105">
+                  <Icon className="h-5 w-5" />
                 </div>
-                <div className="mt-4 pt-3 border-t border-border/60 flex items-center gap-1 text-xs font-semibold text-primary">
-                  <span>Learn more</span>
-                  <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1" />
-                </div>
+                <h3 className="text-base font-bold text-heading group-hover:text-primary transition-colors">
+                  {feat.title}
+                </h3>
+                <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                  {feat.desc}
+                </p>
               </Link>
             );
           })}
+        </div>
+
+        <div className="mt-10 text-center">
+          <Link href="/features">
+            <Button variant="outline" className="font-semibold border-border hover:bg-white">
+              Explore all platform features
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
         </div>
       </Container>
     </Section>

@@ -87,10 +87,7 @@ export default async function PricingPage() {
             </div>
 
             {/* 2. Test Series Tier */}
-            <div className="rounded-2xl border-2 border-primary bg-white p-8 shadow-xl flex flex-col justify-between relative">
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider">
-                Most Popular for CBT Prep
-              </div>
+            <div className="rounded-2xl border border-primary/50 bg-white p-8 shadow-md flex flex-col justify-between">
               <div>
                 <Badge variant="default" className="text-xs font-bold mb-3">
                   TEST SERIES PRO

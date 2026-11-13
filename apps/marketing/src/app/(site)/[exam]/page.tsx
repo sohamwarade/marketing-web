@@ -10,7 +10,6 @@ import { studentUrl } from "@/lib/links";
 import { BatchCard } from "@/components/batch-card";
 import { CourseCard } from "@/components/course-card";
 import { TestSeriesCard } from "@/components/test-series-card";
-import { LearningWorkflow } from "@/components/home/learning-workflow";
 
 export const dynamicParams = false;
 export const revalidate = 300;
@@ -153,10 +152,6 @@ export default async function ExamLandingPage({
                 ))}
               </div>
             </div>
-
-            <p className="text-[11px] text-muted-foreground italic pt-2">
-              Based on the latest official exam profile; verify on official examination conducting authority portal.
-            </p>
           </div>
         </Container>
       </Section>
@@ -224,10 +219,7 @@ export default async function ExamLandingPage({
         </Section>
       )}
 
-      {/* 6. Learning Workflow */}
-      <LearningWorkflow />
-
-      {/* 7. Exam FAQs */}
+      {/* 6. Exam FAQs */}
       {faqs.length > 0 && (
         <Section tone="cream">
           <Container className="max-w-3xl">

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 const SITE_URL = process.env.NEXT_PUBLIC_MARKETING_URL || "https://puzzlers.in";
 const SITE_NAME = "Puzzlers";
 const DEFAULT_DESCRIPTION =
-  "Official preparation platform for MHT-CET, JEE Main, and JEE Advanced. Realistic CBT exam simulations, structured video lessons, and deep diagnostic performance analytics.";
+  "Official preparation platform for MHT-CET and JEE Main. Realistic CBT exam simulations, structured video lessons, and deep diagnostic performance analytics.";
 
 export function constructMetadata({
   title,
@@ -26,6 +26,10 @@ export function constructMetadata({
     description,
     alternates: {
       canonical,
+    },
+    icons: {
+      icon: "/favicon.png",
+      apple: "/logo.png",
     },
     robots: noIndex
       ? { index: false, follow: false }

@@ -14,7 +14,7 @@ export function Section({ tone = "white", className, children, ...props }: Secti
   };
 
   return (
-    <section className={cn("py-16 md:py-24 transition-colors", tones[tone], className)} {...props}>
+    <section className={cn("py-12 md:py-16 transition-colors", tones[tone], className)} {...props}>
       {children}
     </section>
   );

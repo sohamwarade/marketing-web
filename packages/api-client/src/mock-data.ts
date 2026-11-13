@@ -31,17 +31,6 @@ export const MOCK_EXAMINATIONS: PublicExamination[] = [
     sortOrder: 2,
     counts: { courses: 18, batches: 5, testSeries: 4 },
   },
-  {
-    id: "e1000000-0000-0000-0000-000000000003",
-    code: "JEE_ADVANCED",
-    name: "JEE Advanced",
-    slug: "jee-advanced",
-    description: "The pinnacle entrance examination for admission into Indian Institutes of Technology (IITs).",
-    shortDescription: "Advanced multi-correct, numerical, and passage questions aligned with the IIT exam rigor.",
-    active: true,
-    sortOrder: 3,
-    counts: { courses: 12, batches: 3, testSeries: 2 },
-  },
 ];
 
 export const MOCK_COURSES: PublicCourseCard[] = [
@@ -61,7 +50,7 @@ export const MOCK_COURSES: PublicCourseCard[] = [
   {
     id: "c1000000-0000-0000-0000-000000000002",
     slug: "jee-main-mathematics-core",
-    title: "JEE Main Mathematics: Advanced Problem Solving",
+    title: "JEE Main Mathematics: Comprehensive Problem Solving",
     examination: { code: "JEE_MAIN", name: "JEE Main", slug: "jee-main" },
     subject: "Mathematics",
     pricePaise: 599900,
@@ -74,7 +63,7 @@ export const MOCK_COURSES: PublicCourseCard[] = [
   {
     id: "c1000000-0000-0000-0000-000000000003",
     slug: "jee-chemistry-organic-inorganic",
-    title: "Comprehensive Chemistry for JEE Main & Advanced",
+    title: "Comprehensive Chemistry for JEE Main",
     examination: { code: "JEE_MAIN", name: "JEE Main", slug: "jee-main" },
     subject: "Chemistry",
     pricePaise: 549900,
@@ -238,26 +227,6 @@ export const MOCK_EXAM_DETAILS: Record<string, PublicExaminationDetail> = {
       testSeries: [MOCK_BATCHES[1]],
     },
     counts: { courses: 18, batches: 5, testSeries: 4 },
-  },
-  "jee-advanced": {
-    code: "JEE_ADVANCED",
-    name: "JEE Advanced",
-    slug: "jee-advanced",
-    description: "Conducted jointly by IITs for top qualifiers of JEE Main, testing comprehensive conceptual depth.",
-    patternSummary: {
-      subjects: ["Physics", "Chemistry", "Mathematics (Paper 1 & Paper 2)"],
-      questionTypes: ["Single Correct", "Multiple Correct (Partial Marking)", "Numerical", "Passage/Paragraph"],
-      marking: ["Varies by section: Partial marking for MSQs; negative marking applies"],
-      durationMinutes: 360,
-      source: "exam_profile",
-      profileName: "JEE Advanced 2026 Pattern",
-    },
-    featured: {
-      batches: [],
-      courses: [MOCK_COURSES[2]],
-      testSeries: [],
-    },
-    counts: { courses: 12, batches: 3, testSeries: 2 },
   },
 };
 

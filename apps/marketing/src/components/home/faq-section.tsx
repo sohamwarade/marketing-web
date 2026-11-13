@@ -10,11 +10,8 @@ export function FAQSection({ faqs }: { faqs: PublicFaq[] }) {
   return (
     <Section tone="cream">
       <Container>
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100/70 px-3 py-1 rounded-full">
-            Answers & Clarity
-          </span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-heading tracking-tight mt-3">
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-heading tracking-tight">
             Frequently Asked Questions
           </h2>
           <p className="mt-2 text-sm text-body">

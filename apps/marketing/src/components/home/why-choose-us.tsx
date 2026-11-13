@@ -6,7 +6,7 @@ const POINTS = [
   {
     icon: CheckCircle2,
     title: "100% Pattern & Marking Scheme Fidelity",
-    desc: "MHT-CET zero-negative rules, JEE Main numerical rules, and JEE Advanced partial marking schemes are accurately coded and evaluated.",
+    desc: "MHT-CET zero-negative rules and JEE Main numerical marking schemes are accurately coded and evaluated.",
   },
   {
     icon: ShieldCheck,

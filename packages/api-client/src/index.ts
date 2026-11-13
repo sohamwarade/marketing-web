@@ -112,7 +112,6 @@ export function createApiClient(config: ApiClientConfig = {}) {
         { loc: "https://puzzlers.in/faq", priority: 0.7, changefreq: "weekly" },
         { loc: "https://puzzlers.in/mht-cet", priority: 0.9, changefreq: "weekly" },
         { loc: "https://puzzlers.in/jee-main", priority: 0.9, changefreq: "weekly" },
-        { loc: "https://puzzlers.in/jee-advanced", priority: 0.9, changefreq: "weekly" },
         { loc: "https://puzzlers.in/courses", priority: 0.9, changefreq: "daily" },
         { loc: "https://puzzlers.in/batches", priority: 0.9, changefreq: "daily" },
         { loc: "https://puzzlers.in/test-series", priority: 0.9, changefreq: "daily" },

@@ -10,7 +10,7 @@ export const revalidate = 300;
 export const metadata: Metadata = constructMetadata({
   title: "All Courses | MHT-CET & JEE Syllabus Coverage",
   description:
-    "Explore comprehensive subject courses for MHT-CET, JEE Main, and JEE Advanced. Physics, Chemistry, and Mathematics lectures, PDFs, and tests.",
+    "Explore comprehensive subject courses for MHT-CET and JEE Main. Physics, Chemistry, and Mathematics lectures, PDFs, and tests.",
   canonicalUrl: "/courses",
 });
 
