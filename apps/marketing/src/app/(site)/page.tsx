@@ -6,9 +6,7 @@ import { Hero } from "@/components/home/hero";
 import { ExamCategories } from "@/components/home/exam-categories";
 import { PopularBatches } from "@/components/home/popular-batches";
 import { TestSeriesSection } from "@/components/home/test-series-section";
-import { PlatformFeatures } from "@/components/home/platform-features";
 import { FAQSection } from "@/components/home/faq-section";
-import { CTABand } from "@/components/home/cta-band";
 
 export const revalidate = 300;
 
@@ -40,14 +38,8 @@ export default async function HomePage() {
       {/* 4. Computer-Based Test Series */}
       <TestSeriesSection testSeries={testSeries} />
 
-      {/* 5. Core Platform Features */}
-      <PlatformFeatures />
-
-      {/* 6. FAQs */}
+      {/* 5. FAQs */}
       <FAQSection faqs={faqs} />
-
-      {/* 7. Final CTA */}
-      <CTABand />
     </>
   );
 }
